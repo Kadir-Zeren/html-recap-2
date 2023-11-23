@@ -65,6 +65,35 @@
         <br /><br />
         <label for="dob">Dogum Tarihi</label><br />
         <input type="date" name="dob" id="dob" min="1990-01-01" />
+        <br /><br />
+      </section>
+
+      <section>
+        <select name="tatli" id="tatli">
+          <optgroup label="şerbetli tatlilar">
+            <option value="künefe">Künefe</option>
+            <option value="sütlaç">H. Dilimi</option>
+          </optgroup>
+          <optgroup label="sütlü tatlılar">
+            <option value="sütlaç">Sütlaç</option>
+            <option value="kazandibi">Kazandibi</option>
+          </optgroup>
+        </select>
+      </section>
+      <br />
+      <br />
+
+      <section>
+        <label for="yorum">Yorumlarınızı Giriniz:</label><br />
+        <textarea
+          name="yorum"
+          id="yorum"
+          cols="40"
+          rows="10"
+          style="resize: none"
+          maxlength="100"
+          placeholder="En fazla 100 karakter girilebilir"
+        ></textarea>
       </section>
 
       <section id="buttons">
