@@ -7,10 +7,69 @@
   </head>
   <body>
     <h1>FORMS</h1>
-    <form action="" method="post">
+    <form action="result.html">
       <section id="name">
         <label for="isim">İsim</label><br />
-        <input type="text" id="isim" placeholder="Adinizi giriniz" name="" />
+        <input
+          type="text"
+          id="isim"
+          placeholder="Adinizi giriniz"
+          name="isim"
+          required
+        />
+        <br /><br />
+        <label for="email">Email</label><br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email giriniz"
+          required
+        />
+        <br /><br />
+        <label for="pass">Password</label><br />
+        <input
+          type="password"
+          name="pass"
+          id="pass"
+          placeholder="En az 8 karakter giriniz"
+        />
+        <br /><br />
+        <label for="age">age</label><br />
+        <input
+          type="number"
+          name="age"
+          id="age"
+          max="160"
+          min="0"
+          placeholder="Yasinizi giriniz"
+        />
+        <br /><br />
+        <label for="gender">Gender</label><br />
+        <label for="erkek">Erkek</label>
+        <input type="radio" name="gender" id="erkek" value="Erkek" />
+
+        <label for="kadın">Kadın</label>
+        <input type="radio" name="gender" id="kadın" value="Kadın" />
+        <label for="none">None</label>
+        <input type="radio" name="none" id="none" value="None" checked />
+        <br /><br />
+
+        <label for="fav-cars">LUTFEN FAVORİ ARABALARINIZI SEÇİNİZ:</label>
+        <br />
+        <input type="checkbox" name="cars1" id="bmw" value="BMW" />
+        <label for="bmw">BMW</label>
+
+        <input type="checkbox" name="cars2" id="mercedes" value="Mercedes" />
+        <label for="mercedes">Mercedes</label>
+        <br /><br />
+        <label for="dob">Dogum Tarihi</label><br />
+        <input type="date" name="dob" id="dob" min="1990-01-01" />
+      </section>
+
+      <section id="buttons">
+        <input type="submit" value="Kaydet" />
+        <input type="reset" value="Sil" />
       </section>
     </form>
   </body>
